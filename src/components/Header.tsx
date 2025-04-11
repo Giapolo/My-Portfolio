@@ -1,4 +1,4 @@
-import photoIdentite from "../assets/photo-identite.jpg";
+import photoIdentite from "../../public/photo-identite.jpg";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Header () {
