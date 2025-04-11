@@ -1,4 +1,3 @@
-import photoIdentite from "../../public/photo-identite.jpg";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Header () {
@@ -16,7 +15,7 @@ const SocialMedia =
         <section className="flex flex-col items-center gap-10 text-sm">
         <h1>Développeur web Full Stack</h1>
         <h2 className="font-medium text-xl">Maxime GIAMPAOLI</h2>
-        <img className="w-40 border-2 rounded-md border-amber-600" src={photoIdentite} alt="Photo de profil"/>
+        <img className="w-40 border-2 rounded-md border-amber-600" src="../../public/photo-identite.jpg" alt="Photo de profil"/>
         <nav>
             <ul className = "flex flex-row gap-10 ">
                 {SocialMedia.map((social, index) =>
