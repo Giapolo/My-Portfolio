@@ -1,26 +1,31 @@
-import React, { useRef } from 'react';
+import { useRef, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Footer() {
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         
-        emailjs.sendForm(
-            'mail-react',
-            'react_contact_form',
-            form.current,
-            'p7x4p1hE7XE4syvJi'
-        )
-        .then((result) => {
-            console.log(result.text);
-            alert('Message envoyé avec succès!');
-            form.current.reset();
-        }, (error) => {
-            console.log(error.text);
-            alert('Une erreur est survenue. Veuillez réessayer.');
-        });
+        if (form.current) {
+            emailjs.sendForm(
+                'mail-react',
+                'react_contact_form',
+                form.current,
+                'p7x4p1hE7XE4syvJi'
+            )
+            .then((result) => {
+                console.log(result.text);
+                alert('Message envoyé avec succès!');
+                // Vérifier que form.current existe avant d'appeler reset()
+                if (form.current) {
+                    form.current.reset();
+                }
+            }, (error) => {
+                console.log(error.text);
+                alert('Une erreur est survenue. Veuillez réessayer.');
+            });
+        }
     };
 
     return (
