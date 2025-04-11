@@ -17,7 +17,6 @@ function Footer() {
             .then((result) => {
                 console.log(result.text);
                 alert('Message envoyé avec succès!');
-                // Vérifier que form.current existe avant d'appeler reset()
                 if (form.current) {
                     form.current.reset();
                 }
@@ -40,7 +39,7 @@ function Footer() {
                     <div className='half right cf rounded-lg'> 
                         <textarea name='message' placeholder='Message' required></textarea> 
                     </div> 
-                    <input className="bg-amber-600" type='submit' value='Submit' id='input-submit' /> 
+                    <input className="bg-amber-600 hover:scale-110" type='submit' value='Submit' id='input-submit' /> 
                 </form> 
             </div>
         </>

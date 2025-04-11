@@ -48,19 +48,20 @@ function Main () {
         <section className="mt-8">
             <h2 className="text-2xl ">Formation</h2>
             <ul className="mt-4  border-2 bg-amber-600  rounded-lg">
-                <li><span className="font-bold">Wild Code School</span> <br />remote 2025</li>
+                    <li><span className="font-bold">Wild Code School</span> <br />remote 2025</li>
+                    <li className="mt-4 mb-2"><span className="font-bold">Bac Pro Vente</span> <br />Mention Bien - Section Européenne</li>
             </ul>
         </section>
 
             
             <h2 className="text-2xl mt-8">Expérience</h2>
             <ul className="mt-4 border-2 bg-amber-600  rounded-lg flex items-start flex-col p-2">
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-red-600"><FaHtml5 /><FaCss3Alt className="mr-2"/>HTML / CSS :</span>Utilisation de Tailwind et création d'une page vitrine.</li>
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-yellow-600"><DiJavascript1 className="mr-2" />JavaScript :</span> Création d'une To Do List.</li>
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-green-600 text-white"><FaNodeJs className="mr-2"/>Node.JS : </span>Utilisation de package NPM.</li>
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-blue-600 text-white"><SiTypescript className="mr-2"/>TypeScript :</span>Typage explicite, Refactorisation. </li>
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-blue-400 text-white"><DiReact className="mr-2"/>React :</span>Création d'une page de recherche des villes Françaises / React Router.</li>
-                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-gray-700 text-white"><SiExpress className="mr-2" />Express :</span>Gestion de requête HTTP / création et utilisation d'API</li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-red-600 hover:scale-110"><FaHtml5 /><FaCss3Alt className="mr-2"/>HTML / CSS :</span>Utilisation de Tailwind et création d'une page vitrine.</li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-yellow-600 hover:scale-110"><DiJavascript1 className="mr-2" />JavaScript :</span> Création d'une To Do List.</li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-green-600 text-white hover:scale-110"><FaNodeJs className="mr-2"/>Node.JS : </span>Utilisation de package NPM.</li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-blue-600 text-white hover:scale-110"><SiTypescript className="mr-2"/>TypeScript :</span>Typage explicite, Refactorisation. </li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-blue-400 text-white hover:scale-110"><DiReact className="mr-2"/>React :</span>Création d'une page de recherche des villes Françaises / React Router.</li>
+                <li><span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 bg-gray-700 text-white hover:scale-110"><SiExpress className="mr-2" />Express :</span>Gestion de requête HTTP / création et utilisation d'API</li>
             </ul>
 
             <h2 className="mt-12 text-2xl">Mes Projets</h2>
